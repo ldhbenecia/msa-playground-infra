@@ -1,10 +1,36 @@
-# Terraform State Files (CRITICAL: DO NOT COMMIT)
-# Contains sensitive data in plain text!
+# Terraform
 *.tfstate
 *.tfstate.*
-
-# Local Terraform directories (downloaded plugins)
+*.tfstate.backup
 .terraform/
+.terraform.lock.hcl
+terraform.tfplan
 
-# Terraform crash logs
-crash.log
+# Secrets
+terraform.tfvars
+*.tfvars
+secrets.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# SSH Keys
+*.pem
+*.pub
+*.key
+id_rsa*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
